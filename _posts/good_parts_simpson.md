@@ -14,10 +14,10 @@ meta:
     content: Javascript the good parts Kyle Simpson
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 Last time I summarized the good and bad parts of Javascript according to Douglas Crockford... Now I want to do the same according to Kyle Simpson, another Javascript expert I deeply respect. I gathered these opinions from several of Kyle Simpson's lecture on youtube and Linkedin Learning, especially his lectures on ES6, Coercion and Async Patterns.

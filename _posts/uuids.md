@@ -14,10 +14,10 @@ meta:
     content: UUID, browser, javascript
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 Sometimes there is a need to generate an id for objects created in the browser. Simply using an index or a number generated from `Math.random()` does not ensure an adequate level of uniqueness. What is really needed is a Universally Unique IDentifier (UUID). A UUID is a special id that garauntees uniqueness across all space and time.

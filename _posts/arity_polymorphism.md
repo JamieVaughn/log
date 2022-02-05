@@ -16,10 +16,10 @@ meta:
     content: things
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 A Variadic Function describes a function that executes different logic depending on the arity, or the number of parameters passed to it. It is also called called function-overloading sometimes, mostly by detractors of this pattern. But this is a feature in many languages, especially functional paradigm languages. Languages like Elixir, Scheme and even Python support it.

@@ -15,10 +15,10 @@ meta:
     content: React useEffect Effects Events
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 React Hooks are amazing. I find they make it incredibly easy to modularize any piece of logic and then use it seemlessly anywhere in your app. We now get statefulness or statelessness within a consistent function component API by recasting lifecycle hooks as a set of distinct, composable event subscription methods or "Hooks". This lets us cleanly group state/action/effect by feature or component, effectively providing us with extensible mixins lacking in `Class` components. Yes, there were HOCs for `Class` components but those were kludgy for sharing non-presentational logic, with Hooks the non-presentational logic can be easily composed and shared in a function's closure.

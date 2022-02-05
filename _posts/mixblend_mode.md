@@ -14,10 +14,10 @@ meta:
     content: CSS, mix, blend, mode, dark, light, theme
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 ## First, Let's See It In Action!

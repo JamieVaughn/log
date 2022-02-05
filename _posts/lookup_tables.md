@@ -15,10 +15,10 @@ meta:
     content: Lookup-Tables in Javascript
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 Most event-based programming, whether it is for UI or not, needs a way to map some list of actions or inputs to blocks of logic to execute. Procedural Programming may not need this because the entire program is expected to run synchronously and in order. But when responding to events, code will not execute in a predictable order, which requires a good way to organize the possible blocks of logic that may need to run at these asynchronous times. The Asynchronicity, itself, is handled by other patterns (Promises, Futures, Observables Pub/Sub, etc.), but for organizing the callbacks of these patterns, lets take a look at some lookup-table implementation patterns. These patterns appear commonly in state management libraries like Redux and XState to manage state, dispatchers, and actions which may be triggered or transformed within a user interface.

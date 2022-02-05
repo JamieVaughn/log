@@ -15,10 +15,10 @@ meta:
     content: composition, inheritance, null object pattern
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 Sandi Metz delivered a fantastic [conference talk](https://www.youtube.com/watch?v=OMPfEXIlTVE) about Composition called "Nothing is Something." This article is a summary of what I learned from this talk.
@@ -46,7 +46,7 @@ Here are a set of steps to help you identify the role/behavior that is at work:
 
 **Sandi Metz**
 
-![Nothing is Something!](/blog/composition.png)
+![Nothing is Something!](/img/composition.png)
 
 In the example in the talk from which the above table is reprinted, there is a different sorting algorithm for the phrases in the House Class. Instead of inheriting different orders of the phrases, simply instantiate the phrase and inject different sorting algorithms to re-order the phrases. For the House that needs the phrases in the starting order, simply inject a no-op function as the sorting algorithm: thus "Nothing is Something"... a No-op function is the Algorithm needed for that case.
 

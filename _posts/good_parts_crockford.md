@@ -14,10 +14,10 @@ meta:
     content: Javascript the good parts Douglas Crockford
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 Javascript, having famously been created in ten days, has some weird parts. Some of the baggage is from being around for so long and from being a creation of the ECMAScript TC39 committee. Despite all of that, it is still a great language with a lot of power and expressiveness. Douglas Crockford contends the detractors of Javascript mainly get frustrated with the language because they approach it from an Object Oriented angle instead of a Functional angle (it is based on Scheme after all, a 1970's FP language). This is by no means exhaustive, but here are some notes on What Crockford considers good (and bad) about JS:

@@ -15,10 +15,10 @@ meta:
     content: state reducer state management finite state machines
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 Finite State Machines and State management is now an important part of frontend development. Libraries like Redux, XState and Microstates.js are creeping into wide spread use, especially in the React community. Those libraries provide a robust and complex solution to state management and are well suited to production applications. But for learning the concept of State Reducers and Finite State Management let's build a super simple **State Reducer** in three different ways:

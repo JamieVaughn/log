@@ -15,10 +15,10 @@ meta:
     content: create Null Object pattern Javascript
 author:
   name: Jamie Vaughn
-  picture: "/assets/blog/authors/jj.jpeg"
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+  picture: "/authors/jj.jpeg"
+coverImage: "/img/cover.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/img/cover.jpg"
 ---
 
 The Null Object Pattern is a common way in OOP to handle `null` references in a graceful way. If a reference to an object is `null` and a method is invoked on that reference, then this will cause an error. Instead, a Null Object can be implemented with the same interface, but where the methods are no-op methods. Other objects can inherit from this Null Object in such a way, that if a `null` reference is passed then they will use the no-op methods from the Null Object rather than throwing an error.
