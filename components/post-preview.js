@@ -1,18 +1,16 @@
-import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
-import CoverImage from './cover-image'
 import Svg from './svg'
 import Link from 'next/link'
 
 export default function PostPreview({
   title,
-  coverImage,
   date,
   excerpt,
   author,
   tags,
   slug,
   pick,
+  last,
 }) {
   return (
     <>
@@ -28,7 +26,7 @@ export default function PostPreview({
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
-    <hr />
+    {!last && <hr />}
     </>
   )
 }

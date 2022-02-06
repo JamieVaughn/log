@@ -27,7 +27,7 @@ For many developers, Block Element Modifier (BEM) is a beloved CSS naming conven
 
 ```css
 .Block__Element--Modifier {
-  propery: value;
+  property: value;
 }
 ```
 
@@ -84,7 +84,7 @@ Let's try to take the Block, Element, Modifier system from BEM but reimagined it
 
 Here now we significantly reduce the amount of extra text in our HTML markup because there is no need to repeat the `card` class or the `title` class more than a single time per component. And with CSS pre-processors the CSS actually improves more than our BEM counterpart because we do not even need to repeat the `card` class more than once for the component with the help of nesting:
 
-```scss
+```css
 .card {
   &.large {
   }
@@ -97,15 +97,17 @@ Here now we significantly reduce the amount of extra text in our HTML markup bec
 
 Now, we do increase the specificity of our selectors somewhat but not drastically. We start creeping up to a specificity of around 30 (or a perhaps bit more if several modifiers are tacked on), instead of only 10. I don't see that as a deal breaker, myself. And if that is something that is especially concerning, then we can take advantage of the new `:where()` selector in CSS, because that affords us a nesting like syntax and omits any specifity contribution from selectors within it. With `:where()` we can tack on as many modifiers as we want without increasing the css. For example:
 
-```
+```css
 /* These have specificity of 10 */
-:where(.block) .element:where(.modifier, .large, .dropshadow, .primary) {}
-:where(.block) .element :where(.modifier, .large, .dropshadow, .primary) {}
+:where(.block) .element:where(.modifier, .large, .dropshadow, .primary) {
+}
+:where(.block) .element :where(.modifier, .large, .dropshadow, .primary) {
+}
 ```
 
 And we get all of that without even the need of more complicated mixins! Our modifier classes become our mixins and we define a set of "global" baseline modifiers with basic styles that all instances of the modifier would use. And then simply add the unique styles to the nested instances of the modifiers as required by the block and element they appear in. Let's see an example of that:
 
-```scss
+```css
 .large {
   font-size: 2em;
 }
@@ -129,7 +131,7 @@ And we get all of that without even the need of more complicated mixins! Our mod
 
 I don't know about you, but that looks nicer to me! But wait could we further reduce the verbosity by rethinking the **element** from the BEM convention? Why don't we just use the HTML Element tag names as the **element** naming convention? There's a certian semantic resonance in that, isn't there? so Our example above would be shortened to:
 
-```scss
+```css
 .large {
   font-size: 2em;
 }
@@ -153,9 +155,26 @@ This might not look like much of a change, but it does two things. First, we red
 
 One last piece of organization that is possible (but entirely optional) is separating out each of the levels of css into its own file:
 
-| Block      |   Element    |      Modifier |
-| ---------- | :----------: | ------------: |
-| .Header    |    .title    |         .bold |
-| blocks.css | elements.css | modifiers.css |
+<table>
+    <thead>
+        <tr>
+            <th>Block</th>
+            <th>Element</th>
+            <th>Modifier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.Header</code></td>
+            <td><code>.title</code></td>
+            <td><code>.bold</code></td>
+        </tr>
+        <tr>
+            <td>blocks.css</td>
+            <td>elements.css</td>
+            <td>modifiers.css</td>
+        </tr>
+    </tbody>
+</table>
 
 And then one more file called `chains.css` could be added for including chained css that has three levels of chaining (`.Header.title.bold`)when its necessary to do so to overwrite other css rules or customize things further.

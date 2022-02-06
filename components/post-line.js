@@ -1,21 +1,22 @@
-import DateFormatter from '../components/date-formatter'
-import Svg from './svg'
+import DateFormatter from './date-formatter'
 import Link from 'next/link'
 
 export default function PostLine({
   title,
   date,
-  excerpt,
   slug,
 }) {
   return (
     <>
     <div>
-      <h3 className="text-1xl mb-0 leading-snug">
+      <p className="text-1xl text-slate-600 mb-0 leading-snug flex justify-between">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
-      </h3>
+        <span className='text-slate-400 text-right'>
+          <DateFormatter dateString={date} />
+        </span>
+      </p>
     </div>
     <hr />
     </>

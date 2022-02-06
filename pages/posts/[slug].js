@@ -6,20 +6,20 @@ import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getPostBySlug, getAllPosts, getRandomPost } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
-// import { prism } from 'prism'
-const prism = require("prismjs")
+import Link from 'next/link'
+import prism from 'prismjs'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, readMore, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-
+  console.log('more', readMore)
   // Apply prism in all code blocks
   useEffect(() => {
     prism.highlightAll()
@@ -51,6 +51,9 @@ export default function Post({ post, morePosts, preview }) {
           </>
         )}
       </Container>
+      <div className='text-center text-2xl my-16 underline'>
+        <Link  href={'/posts'}>Read Another!</Link>
+      </div>
     </Layout>
   )
 }
@@ -67,11 +70,13 @@ export async function getStaticProps({ params }) {
   ])
   const content = await markdownToHtml(post.content || '')
 
+  const readMore = getRandomPost()
   return {
     props: {
       post: {
         ...post,
         content,
+        readMore,
       },
     },
   }

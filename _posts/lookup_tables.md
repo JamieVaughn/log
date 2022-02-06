@@ -153,7 +153,7 @@ The HTML might be something like this:
 
 ```html
 <label for="choices">Listen to an animal's call:</label>
-<select name="choices" id="choices" onchange="factorySound(event.target.value)">
+<select id="choices" onchange="factorySound(event.target.value)">
   <option value="dog">Dog</option>
   <option value="cat">Cat</option>
   <option value="bird">Bird/option></option>

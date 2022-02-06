@@ -31,3 +31,9 @@ next build && next export
 ```
 
 And then use github pages to host it
+
+### TODO
+
+- comment system https://tdarb.org/poormans-comment-system/
+- MDX and react components for articles
+- dark theme toggle
