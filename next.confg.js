@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
  const nextConfig = {
-  basePath: 'wjv.io/',
+  basePath: 'wjv.io/log',
   assetPrefix: 'log',
   outDir: 'docs'
 }
