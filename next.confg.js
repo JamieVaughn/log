@@ -3,7 +3,7 @@
  */
  const nextConfig = {
   basePath: 'wjv.io/',
-  assetPrefix: '',
+  assetPrefix: 'log',
   outDir: 'docs'
 }
 
