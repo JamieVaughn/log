@@ -11,7 +11,7 @@ export default function Join({env}) {
   const recaptchaCallback = () => {
     document.querySelector('footer form input[type=submit]').removeAttribute('disabled');
 }
-const recaptchaCallback2() => {
+const recaptchaCallback2 = () => {
   var live = document.querySelector('#time');
   live.value = new Date();
   document.querySelector('[name=redirect_to]').value = (window || globalThis).location.href
