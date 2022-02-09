@@ -1,4 +1,7 @@
+import prefix from '../constants'
+
 export default function (props) {
+  console.log(prefix)
   const {width = 196, height = 196, pick = 0, source, style} = props
   const svgs = [
     'target',
@@ -18,6 +21,6 @@ export default function (props) {
   const len = svgs.length
   const path = source ? source : svgs[pick%len]
   return (
-    <img src={`svg/${path}.svg`} height={height} width={width} style={style} {...props} />
+    <img src={prefix + `svg/${path}.svg`} height={height} width={width} style={style} {...props} />
   )
 }

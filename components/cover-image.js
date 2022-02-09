@@ -1,12 +1,13 @@
 import cn from 'classnames'
 import Link from 'next/link'
+import prefix from '../constants'
 // import Image from 'next/image'
 
 export default function CoverImage({ title, src, slug, height, width }) {
   const image = (
     <img
       // loader={({src, width, quality}) => `${src}`}
-      src={'/log'+src}
+      src={prefix + src}
       alt={`Cover Image for ${title}`}
       className={cn('responsive shadow-sm', {
         'hover:shadow-md transition-shadow duration-200': slug,
