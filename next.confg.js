@@ -3,6 +3,7 @@
  */
  const nextConfig = {
   basePath: '/log',
+  assetPrefix: '/log/',
   outDir: 'docs'
 }
 
