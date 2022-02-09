@@ -1,14 +1,19 @@
 export default function (props) {
   const {width = 196, height = 196, pick = 0, source, style} = props
   const svgs = [
-    'mountain',
-    'race',
-    'astronomy',
-    'caveman',
-    'island',
     'target',
     'nature',
     'garden',
+    'astronomy',
+    'mountain',
+    'island',
+    'race',
+    'balloon',
+    'ai',
+    'caveman',
+    'building',
+    'clock',
+    'forest',
   ]
   const len = svgs.length
   const path = source ? source : svgs[pick%len]

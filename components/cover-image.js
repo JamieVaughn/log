@@ -8,7 +8,7 @@ export default function CoverImage({ title, src, slug, height, width }) {
       // loader={({src, width, quality}) => `${src}`}
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn('shadow-sm', {
+      className={cn('responsive shadow-sm', {
         'hover:shadow-md transition-shadow duration-200': slug,
       })}
       // layout="responsive"

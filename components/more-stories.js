@@ -38,7 +38,7 @@ export default function MoreStories({ posts, compact }) {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
-            pick={i}
+            pick={new Date(post.date).getDate()}
             last={!posts[i+1]}
           />
         ))}

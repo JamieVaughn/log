@@ -27,10 +27,18 @@ This blog-starter uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://
 export the static site build output with
 
 ```
-next build && next export
+npm run build
 ```
 
-And then use github pages to host it
+then
+
+```
+npm run export
+```
+
+You can run `npm start` to test & check the production build output locally.
+
+And then use github pages to host it. The export command will output the static site to `/docs`, so that github pages can identify it.
 
 ### TODO
 
