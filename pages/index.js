@@ -21,7 +21,7 @@ export default function Index({ allPosts }) {
             <Svg source={'grow-blue'} height={210} width={415} style={{margin: '0 auto'}}/>
             <div className='flex flex-col justify-around align-center' style={{height: '12rem'}}>
                 <Link href='/posts'>
-                    <p className="text-center bg-sky-700 hover:bg-indigo-800 text-white lg:w-1/3 md:w-1/2 font-bold py-2 px-4 rounded center">
+                    <p className="text-center bg-sky-700 hover:bg-indigo-800 cursor-pointer text-white lg:w-1/3 md:w-1/2 font-bold py-2 px-4 rounded center">
                       Go to Latest Posts →
                     </p>
                 </Link>

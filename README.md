@@ -44,5 +44,5 @@ And then use github pages to host it. The export command will output the static 
 
 - comment system https://tdarb.org/poormans-comment-system/
 - MDX and react components for articles
+- integrate uuid & mixblend & join components
 - dark theme toggle
-- render topic tags

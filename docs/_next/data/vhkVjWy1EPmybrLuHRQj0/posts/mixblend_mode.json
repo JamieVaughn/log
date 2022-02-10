@@ -1,1 +1,0 @@
-{"pageProps":{"post":{"title":"Using the CSS Mix Blend Mode for dark/light theme","date":"2021-03-17T12:15:07.322Z","slug":"mixblend_mode","author":{"name":"Jamie Vaughn","picture":"/authors/jj.jpeg"},"content":"<h2>First, Let's See It In Action!</h2>\n<p>Select colors</p>\n<MixBlendMode />\n","ogImage":{"url":"/img/cover.jpg"},"coverImage":"/img/cover.jpg"}},"__N_SSG":true}

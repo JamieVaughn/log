@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      <span className='absolute bottom-1 right-2'>
+      <span className='absolute bottom-1 right-2 text-xs'>
         graphics from <span className='underline'>
           <Link  href='https://designs.ai/graphicmaker'>designs.ai</Link>
         </span>

@@ -9,7 +9,7 @@ export default function Intro() {
         </Link>
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Sharing observations on the web platform
+        Sharing observations about the web platform
       </h4>
     </section>
   )

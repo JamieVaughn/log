@@ -13,7 +13,7 @@ meta:
   - name: keywords
     content: Javascript
 author:
-  name: Jamie Vaughn
+  name: "Jamie Vaughn"
   picture: "/authors/jj.jpeg"
 coverImage: "/img/cover.jpg"
 ogImage:

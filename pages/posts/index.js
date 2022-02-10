@@ -14,7 +14,7 @@ export default function Posts({ allPosts }) {
         <Head><title>Make Devs Blog</title></Head>
         <Container>
           <Intro />
-          {morePosts.length > 0 && <MoreStories posts={[heroPost, ...morePosts]} />}
+          {morePosts.length > 0 && <MoreStories posts={allPosts} />}
         </Container>
       </Layout>
     </>
@@ -29,6 +29,7 @@ export async function getStaticProps() {
     'author',
     'coverImage',
     'excerpt',
+    'tags,'
   ])
 
   return {

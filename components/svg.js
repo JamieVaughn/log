@@ -1,7 +1,6 @@
 import prefix from '../constants'
 
 export default function (props) {
-  console.log(prefix)
   const {width = 196, height = 196, pick = 0, source, style} = props
   const svgs = [
     'target',
