@@ -6,7 +6,7 @@ export default function MoreStories({ posts, compact }) {
   if(compact) {
     return (
       <section>
-      <h2 className="mt-32 mb-4 text-3xl md:text-4xl font-bold tracking-wide">
+      <h2 className="text-center mt-32 mb-4 text-3xl md:text-4xl font-bold tracking-wide">
         <span className='bg-sky-700 text-white p-2 rounded'>
           Post Archives
         </span>
@@ -29,7 +29,7 @@ export default function MoreStories({ posts, compact }) {
       <h2 className="my-32 text-center text-3xl md:text-4xl font-bold tracking-tighter leading-tight">
         All Posts
       </h2>
-      <div className="grid grid-cols-1 lg:gap-x-32 gap-y-8 mb-32 lg:px-32">
+      <div className="grid grid-cols-1 justify-items-center lg:gap-x-32 gap-y-8 mb-32 lg:px-32">
         {posts.map((post, i) => (
           // <PostPreview
           //   key={post.slug}

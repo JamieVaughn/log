@@ -16,10 +16,10 @@ export default function PostCard({
   return (
     <Link as={`/posts/${slug}`} href="/posts/[slug]">
     <div className="cursor-pointer max-w-sm w-full lg:max-w-full lg:flex hover:scale-105 transition-all duration-300">
-      <div className="border-t border-b border-l border-gray-400 lg:border-r-0 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Isometric SVG Scene">
+      <div className="border lg:border-r-0 border-gray-400 lg:border-r-0 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Isometric SVG Scene">
         <Svg pick={pick} className='post-image' />
       </div>
-      <div className="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div className="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">
           <p className="text-sm text-gray-600 flex items-center">
             {/* <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -30,7 +30,7 @@ export default function PostCard({
           <p className="text-gray-700 text-base ">{excerpt}</p>
         </div>
         <div className="flex items-center justify-between">
-          <ul className="flex align-center list-none text-sm text-gray-600 flex items-center">
+          <ul className="flex flex-wrap align-center list-none text-sm text-gray-600 flex items-center">
             {tags?.map((t, i) => (
               <li key={i+String(t)} className="flex items-center mb-0 px-4 text-gray-500">
                 <svg className="fill-current text-gray-500 w-3 h-3 mr-2" viewBox="2 2 17 17">

@@ -1,7 +1,7 @@
 ---
 title: The Null Object Pattern in the Functional Style
 lang: en-US
-date: "2020-02-20T08:50:07.322Z"
+date: "2020-02-21T08:50:07.322Z"
 excerpt: Let's see how to create a Null Object pattern in Javascript
 type: post
 blog: true
