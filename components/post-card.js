@@ -1,6 +1,5 @@
 import DateFormatter from '../components/date-formatter'
 import Svg from './svg'
-import Avatar from './avatar'
 import Link from 'next/link'
 
 export default function PostCard({
@@ -11,13 +10,13 @@ export default function PostCard({
   tags,
   slug,
   pick,
-  last,
+  source,
 }) {
   return (
     <Link as={`/posts/${slug}`} href="/posts/[slug]">
     <div className="cursor-pointer max-w-sm w-full lg:max-w-full lg:flex hover:scale-105 transition-all duration-300">
       <div className="border lg:border-r-0 border-gray-400 lg:border-r-0 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Isometric SVG Scene">
-        <Svg pick={pick} className='post-image' />
+        <Svg source={source} pick={pick} className='post-image' />
       </div>
       <div className="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">

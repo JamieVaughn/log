@@ -31,18 +31,6 @@ export default function MoreStories({ posts, compact }) {
       </h2>
       <div className="grid grid-cols-1 justify-items-center lg:gap-x-32 gap-y-8 mb-32 lg:px-32">
         {posts.map((post, i) => (
-          // <PostPreview
-          //   key={post.slug}
-          //   title={post.title}
-          //   coverImage={post.coverImage}
-          //   date={post.date}
-          //   author={post.author}
-          //   slug={post.slug}
-          //   excerpt={post.excerpt}
-          //   tags={post.tags}
-          //   pick={new Date(post.date).getDate()}
-          //   last={!posts[i+1]}
-          // />
           <PostCard
             key={post.slug}
             title={post.title}
