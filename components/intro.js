@@ -8,7 +8,7 @@ export default function Intro() {
           Make 🏗️ Devs
         </Link>
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8 tracking-wider">
         Sharing observations about the web platform
       </h4>
     </section>
