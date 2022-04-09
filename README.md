@@ -42,7 +42,10 @@ And then use github pages to host it. The export command will output the static 
 
 ### TODO
 
-- comment system https://tdarb.org/poormans-comment-system/
+- add publish var to metadata and check publish boolean in the api.js loading function to filter out false values
+- dark theme toggle
+- add filter by tag to more-stories component
+- replace read another link with routing to random article
 - MDX and react components for articles
 - integrate uuid & mixblend & join components
-- dark theme toggle
+- comment system https://tdarb.org/poormans-comment-system/

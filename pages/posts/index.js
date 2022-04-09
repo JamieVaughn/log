@@ -1,12 +1,11 @@
 import Container from '../../components/container'
-import MoreStories from '../../components/more-stories'
+import AllPosts from '../../components/all-posts'
 import Intro from '../../components/intro'
 import Layout from '../../components/layout'
 import { getAllPosts } from '../../lib/api'
 import Head from 'next/head'
 
 export default function Posts({ allPosts }) {
-  const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
     <>
@@ -14,7 +13,7 @@ export default function Posts({ allPosts }) {
         <Head><title>Make Devs Blog</title></Head>
         <Container>
           <Intro />
-          {morePosts.length > 0 && <MoreStories posts={allPosts} />}
+          {morePosts.length > 0 && <AllPosts posts={allPosts} />}
         </Container>
       </Layout>
     </>
