@@ -4,8 +4,8 @@ import MoreStories from '../components/more-stories'
 import PostCard from '../components/post-card'
 import Svg from '../components/svg'
 import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import Layout from '@/components/layout'
+import { getAllPosts } from '@/lib/api'
 import Head from 'next/head'
 
 export default function Index({ allPosts }) {

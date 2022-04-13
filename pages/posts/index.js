@@ -1,7 +1,7 @@
-import Container from '../../components/container'
-import AllPosts from '../../components/all-posts'
-import Intro from '../../components/intro'
-import Layout from '../../components/layout'
+import Container from '@/components/container'
+import AllPosts from '@/components/all-posts'
+import Intro from '@/components/intro'
+import Layout from '@/components/layout'
 import { getAllPosts } from '../../lib/api'
 import Head from 'next/head'
 

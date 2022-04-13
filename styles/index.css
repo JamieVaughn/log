@@ -50,7 +50,11 @@ img.responsive {width: 100%}
 .center  {
   margin: 0 auto;
 }
-
+blockquote {
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 4px solid silver;
+}
 .post-preview {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -73,13 +77,6 @@ img.responsive {width: 100%}
   background-color: #ccc;
   border-radius: 3px;
 }
-/* .post-preview div {
-  align-self: end;
-}
-.post-preview p {
-  grid-column: 1 / span 2;
-  justify-self: left;
-} */
 
 pre {
   width: fit-content;
