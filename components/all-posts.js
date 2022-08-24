@@ -16,7 +16,7 @@ export default function AllPosts({ posts }) {
       </h2>
       <input list='tag-filter' name='filter' id='filter' className='md:-translate-y-28 flex my-8 mx-auto md:mr-0 md text-center border-2 rounded-md' placeholder='Filter by tag' value={filter} onChange={filterPosts} />
       <datalist id='tag-filter'>
-        {tags.map(tag => <option value={tag} />)}
+        {tags.map(tag => <option key={tag} value={tag} />)}
       </datalist>
       <div className="grid grid-cols-1 justify-items-center lg:gap-x-32 gap-y-8 mb-32 lg:px-32">
         {posts.filter(p => {

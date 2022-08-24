@@ -1,9 +1,10 @@
-import matter from 'gray-matter'
 import Layout from '@/components/layout'
 import Link from 'next/link'
-import path from 'path'
+import { getAllPosts } from '@/lib/api'
 
-export default function Index({ posts = [] }) {
+
+
+export default function Index({ allPosts = [] }) {
   return (
     <Layout>
       <h1>MDX Posts Page</h1>
@@ -12,13 +13,13 @@ export default function Index({ posts = [] }) {
         <code>next-mdx-remote</code>.
       </p>
       <ul>
-        {posts.map((post) => (
+        {allPosts.map((post) => (
           <li key={post.filePath}>
             <Link
-              as={`/mdx/${post.filePath.replace(/\.mdx?$/, '')}`}
-              href={`/mdx/[slug]`}
+              as={`articles/${post.slug.replace(/\.mdx?$/, '')}`}
+              href={`articles/[slug]`}
             >
-              <a>{post.data.title}</a>
+              <a>{post.title}</a>
             </Link>
           </li>
         ))}
@@ -27,17 +28,18 @@ export default function Index({ posts = [] }) {
   )
 }
 
-// export function getStaticProps() {
-//   const posts = postFilePaths.map((filePath) => {
-//     const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
-//     const { content, data } = matter(source)
+export async function getStaticProps() {
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+    'tags,'
+  ])
 
-//     return {
-//       content,
-//       data,
-//       filePath,
-//     }
-//   })
-
-//   return { props: { posts } }
-// }
+  return {
+    props: { allPosts },
+  }
+}
